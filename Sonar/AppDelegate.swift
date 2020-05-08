@@ -110,7 +110,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
         application.registerForRemoteNotifications()
 
-        remoteNotificationManager.configure()
+        //remoteNotificationManager.configure()
         dispatcher.registerHandler(forType: .status) { userInfo, completion in
             self.statusNotificationHandler.handle(userInfo: userInfo, completion: completion)
         }
